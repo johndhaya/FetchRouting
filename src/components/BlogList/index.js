@@ -1,12 +1,12 @@
 // Write your JS code here
-import {Componnent} from 'react'
+import {Component} from 'react'
 
 import Loader from 'react-loader-spinner'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import BlogItem from '../BlogItem'
 import './index.css'
 
-class BlogsList extends Componnent {
+class BlogsList extends Component {
   state = {isLoading: true, blogsData: []}
 
   componentDidMount() {
@@ -21,7 +21,7 @@ class BlogsList extends Componnent {
       id: each.id,
       title: each.title,
       imageUrl: each.image_url,
-      abvatarUrl: each.avatar_url,
+      avatarUrl: each.avatar_url,
       author: each.author,
       topic: each.topic,
     }))

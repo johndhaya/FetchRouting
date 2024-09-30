@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
 const BlogItem = props => {
   const {blogItemDetails} = props
-  const {id, imageUrl, topic, title, avatarUrl, author} = blogItemDetails
+  const {id, title, imageUrl, avatarUrl, author, topic} = blogItemDetails
 
   return (
     <li className="blog-item">

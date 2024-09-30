@@ -1,11 +1,12 @@
 // Write your JS code here
-import {Componnent} from 'react'
+import {Component} from 'react'
 
 import Loader from 'react-loader-spinner'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import './index.css'
 
-class BlogItemDetails extends Componnent {
+class BlogItemDetails extends Component {
+  // eslint-disable-next-line
   state = {blogData: {}, isLoading: false}
 
   componentDidMount() {
@@ -22,11 +23,12 @@ class BlogItemDetails extends Componnent {
 
     const updatedData = {
       title: data.title,
-      imageUrl: data.imageUrl,
+      imageUrl: data.image_url,
       content: data.content,
       avatarUrl: data.avatar_url,
       author: data.author,
     }
+    // eslint-disable-next-line
     this.setState({blogData: updatedData, isLoading: false})
   }
 
