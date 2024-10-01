@@ -33,7 +33,7 @@ class BlogItemDetails extends Component {
   }
 
   renderBlogItemDetails = () => {
-    const {blogData} = this.props
+    const {blogData} = this.state
     const {title, imageUrl, content, avatarUrl, author} = blogData
     return (
       <div className="blog-info">
